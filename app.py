@@ -2,7 +2,9 @@ from flask import Flask, render_template, request
 import pandas as pd
 import joblib
 
+
 app = Flask(__name__)
+
 
 # Load your trained model
 model_rf = joblib.load('heart_disease.pkl')
